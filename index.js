@@ -48,7 +48,7 @@ app.use(session({
     secret: SESSION_SECRET,
     resave: false,
     saveUninitialized: true,
-    cookie: { secure: false }  // Defina como `true` se estiver usando HTTPS
+    cookie: { secure: true }  // Defina como `true` se estiver usando HTTPS
 }));
 
 // Rota de Cadastro (Register)
@@ -129,7 +129,7 @@ app.use(session({
     resave: false,
     saveUninitialized: true,
     cookie: {
-        secure: false, // Defina como true se estiver usando HTTPS
+        secure: true, // Defina como true se estiver usando HTTPS
         maxAge: 24 * 60 * 60 * 1000 // Tempo de vida do cookie: 24 horas
     }
 }));
@@ -152,7 +152,7 @@ app.use(session({
     resave: false,
     saveUninitialized: true,
     cookie: {
-        secure: false, // True se estiver usando HTTPS
+        secure: true, // True se estiver usando HTTPS
         maxAge: 1 * 60 * 1000 // Expira em 30 minutos
     }
 }));
@@ -160,6 +160,6 @@ app.use(session({
 
 // Iniciar o servidor
 app.listen(PORT, () => {
-    console.log(`Servidor rodando em http://localhost:${PORT}`);
+    console.log(`Servidor rodando na porta ${PORT}`);
 });
 

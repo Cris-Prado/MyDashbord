@@ -29,3 +29,19 @@
     min-height: 100dvh;
     background: #0b241d;
 }
+
+.ancLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    height: 50px;
+    width: 150px;
+}
+.ancLogin:hover{
+    color: rgb(109, 114, 184);
+}
